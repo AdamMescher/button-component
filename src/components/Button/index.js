@@ -24,10 +24,10 @@ const Button = styled.button`
   ${shadow}
   ${space}
   border-radius: 6px;
-  padding: 
+  padding:
     ${theme.space[2]}
     ${theme.space[4]}
-    ${theme.space[2]} 
+    ${theme.space[2]}
     ${theme.space[4]};
   ${(props) =>
     props.size === "sm" &&
@@ -47,17 +47,40 @@ const Button = styled.button`
       padding: ${theme.space["2.6"]} ${theme.space["5.5"]} ${theme.space["2.6"]}
         ${theme.space["5.5"]};
     `}
-  ${(props) =>
-    props.color === "default" &&
-    css`
+    ${(props) =>
+    !props.color && !props.variant && css`
+      ${console.log('FIRED NOT DEFAULT, PRIMARY, SECONDARY, OR DANGER')}
       background-color: ${theme.colors.gray[100]};
-      color: ${theme.gray[200]};
+      border: 0;
+      box-shadow: ${theme.shadow.default};
+      color: ${theme.colors.gray[400]};
       :hover:enabled,
       :focus:enabled {
         background-color: ${theme.colors.gray[200]};
+        cursor: pointer;
       }
       :disabled {
         background-color: ${theme.colors.gray[100]};
+        color: ${theme.colors.gray[300]};
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+    `}
+  ${(props) =>
+    (props.color === "default") &&
+    css`
+      background-color: ${theme.colors.gray[100]};
+      border: 0;
+      box-shadow: ${theme.shadow.default};
+      color: ${theme.colors.gray[400]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.gray[200]};
+        cursor: pointer;
+      }
+      :disabled {
+        background-color: ${theme.colors.gray[100]};
+        color: ${theme.colors.gray[300]};
         box-shadow: none;
         cursor: not-allowed;
       }
