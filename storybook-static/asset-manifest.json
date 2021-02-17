@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "./main.d6ee367a91940dc6f8d8.bundle.js",
+    "main.js.map": "./main.d6ee367a91940dc6f8d8.bundle.js.map",
+    "runtime~main.js": "./runtime~main.d6ee367a91940dc6f8d8.bundle.js",
+    "runtime~main.js.map": "./runtime~main.d6ee367a91940dc6f8d8.bundle.js.map",
+    "vendors~main.js": "./vendors~main.d6ee367a91940dc6f8d8.bundle.js",
+    "vendors~main.js.map": "./vendors~main.d6ee367a91940dc6f8d8.bundle.js.map",
+    "iframe.html": "./iframe.html",
+    "static/media/icon-add_task-white.84b069ae.svg": "./static/media/icon-add_task-white.84b069ae.svg",
+    "static/media/icon-brightness-white.d0caf7ec.svg": "./static/media/icon-brightness-white.d0caf7ec.svg",
+    "static/media/icon-catching_pokemon-white.a98bd888.svg": "./static/media/icon-catching_pokemon-white.a98bd888.svg",
+    "static/media/icon-cloud_upload-white.9e35b1a2.svg": "./static/media/icon-cloud_upload-white.9e35b1a2.svg",
+    "static/media/icon-directions-white.eaf7850f.svg": "./static/media/icon-directions-white.eaf7850f.svg",
+    "static/media/icon-fingerprint-white.68bef8d8.svg": "./static/media/icon-fingerprint-white.68bef8d8.svg",
+    "static/media/icon-snowflake-white.e1749a25.svg": "./static/media/icon-snowflake-white.e1749a25.svg",
+    "vendors~main.d6ee367a91940dc6f8d8.bundle.js.LICENSE.txt": "./vendors~main.d6ee367a91940dc6f8d8.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.d6ee367a91940dc6f8d8.bundle.js",
+    "vendors~main.d6ee367a91940dc6f8d8.bundle.js",
+    "main.d6ee367a91940dc6f8d8.bundle.js"
+  ]
+}
