@@ -13,10 +13,13 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
+- [Live Site via Netlify](https://happy-ritchie-0c241c.netlify.app/)
+- [Storybook via Chromatic](https://www.chromatic.com/component?appId=602c755fd949d200230ce725&name=Button&buildNumber=1&historyLengthAtIndex=9&distanceToMoveBack=-1)
+
 - What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+
+Overall, this was a fantastic opportunity to learn [styled-system](https://styled-system.com/) by building an extinsible button component. It has greatly improved my understanding of what it takes to create and implement a design system and apply it to specific components. 
+
 
 ### Built With
 
@@ -24,12 +27,27 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - [Styled Components](https://styled-components.com/)
 - [Styled System](https://styled-system.com/)
 - [Storybook](https://storybook.js.org/)
+- Application deployed to [Netlify](https://www.netlify.com/)
+- Storybook deployed via [Chromatic](https://www.chromatic.com/)
 
 ## Features
 
 ### Three unique button types: `default`, `outline`, and `text`
 
 #### default
+
+Default color scheme and button type is used when `variant` or `color` props are not defined.
+
+<img width="455" alt="default-button" src="https://user-images.githubusercontent.com/6540117/108156614-39b15a00-709e-11eb-96a4-8a157b194160.png">
+
+**hover and focus states**
+
+<img width="216" alt="default-button-hover" src="https://user-images.githubusercontent.com/6540117/108156800-91e85c00-709e-11eb-9c20-c89259ca0682.png">
+
+**disabled state**
+
+<img width="91" alt="default-button-disabled" src="https://user-images.githubusercontent.com/6540117/108157137-42eef680-709f-11eb-927f-6d46fd355772.png">
+
 
 #### outline
 
