@@ -112,7 +112,7 @@ export default {
     }
 }
 
-export const ButtonComponent = () => <Button>Button</Button>
+export const ButtonComponent = (args) => <Button {...args}>Button</Button>
 
 export const Sizes = () => {
     return (
