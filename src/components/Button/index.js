@@ -139,6 +139,7 @@ const Button = styled.button`
       :disabled {
         background-color: ${theme.colors.gray[100]};
         box-shadow: none;
+        color: ${theme.colors.gray[300]};
         cursor: not-allowed;
       }
     `}
@@ -156,6 +157,7 @@ const Button = styled.button`
       :disabled {
         background-color: ${theme.colors.gray[100]};
         box-shadow: none;
+        color: ${theme.colors.gray[300]};
         cursor: not-allowed;
       }
     `}
@@ -174,6 +176,7 @@ const Button = styled.button`
       :disabled {
         background-color: ${theme.colors.gray[100]};
         box-shadow: none;
+        color: ${theme.colors.gray[300]};
         cursor: not-allowed;
       }
     `}

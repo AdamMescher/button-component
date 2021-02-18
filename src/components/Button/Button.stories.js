@@ -6,6 +6,7 @@ export default {
     component: Button,
     argTypes: {
         disableShadow: { control: 'boolean' },
+        disabled: { control: 'boolean' },
         color: {
             control: {
                 type: 'radio',
