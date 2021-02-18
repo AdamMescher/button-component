@@ -31,6 +31,18 @@ export default function App() {
             <Button variant="text" size="md">Text md</Button>
             <Button variant="text" size="lg">Text lg</Button>
           </div>
+          <div>
+            <h1>Start Icon</h1>
+            <Button startIcon="rotation3D">Start Icon Default</Button>
+            <Button color="danger" startIcon="lightMode">Start Icon Danger</Button>
+            <Button color="secondary" startIcon="checkBox">Start Icon Secondary</Button>
+            <Button color="primary" startIcon="addReaction">Start Icon Primary</Button>
+            <h1>End Icon</h1>
+            <Button endIcon="crop">End Icon</Button>
+            <Button color="primary" endIcon="navigate">End Icon Primary</Button>
+            <Button color="secondary" endIcon="podcasts">End Icon Primary</Button>
+            <Button color="danger" endIcon="tune">End Icon Primary</Button>
+          </div>
         </div>
       </div>
       </ThemeProvider>

@@ -116,5 +116,9 @@ export default {
         cursor: "pointer"
       }
     }
+  },
+  filter: {
+    default: 'invert(20%) sepia(0%) saturate(1397%) hue-rotate(232deg) brightness(107%) contrast(89%)',
+    white: 'invert(100%) sepia(1%) saturate(0%) hue-rotate(84deg) brightness(108%) contrast(100%)'
   }
 };

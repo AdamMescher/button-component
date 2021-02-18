@@ -1,22 +1,61 @@
 import styled, { css } from "styled-components";
 import { space, buttonStyle, shadow } from "styled-system";
 import theme from "../../theme";
-import addTask from "../../assets/icons/icon-add_task-white.svg";
-import brightness from "../../assets/icons/icon-brightness-white.svg";
-import cloudUpload from "../../assets/icons/icon-cloud_upload-white.svg";
-import directions from "../../assets/icons/icon-directions-white.svg";
-import fingerprint from "../../assets/icons/icon-fingerprint-white.svg";
-import pokeball from "../../assets/icons/icon-catching_pokemon-white.svg";
-import snowflake from "../../assets/icons/icon-snowflake-white.svg";
+
+import addAlert from '../../assets/icons/icon-add_alert-black.svg';
+import addCircle from '../../assets/icons/icon-add_circle_outline-black.svg';
+import addLocation from '../../assets/icons/icon-add_circle_outline-black.svg';
+import addReaction from '../../assets/icons/icon-add_reaction-black.svg';
+import callEnd from '../../assets/icons/icon-call_end-black.svg';
+import call from '../../assets/icons/icon-call-black.svg';
+import checkBox from '../../assets/icons/icon-check_box-black.svg';
+import crop from '../../assets/icons/icon-crop-black.svg';
+import indeterminiteCheckBox from '../../assets/icons/icon-indeterminate_check_box-black.svg';
+import lightMode from '../../assets/icons/icon-light_mode-black.svg';
+import link from '../../assets/icons/icon-link-black.svg';
+import navigate from '../../assets/icons/icon-navigation-black.svg';
+import navigateBefore from '../../assets/icons/icon-navigate_before-black.svg';
+import navigateNext from '../../assets/icons/icon-navigate_next-black.svg';
+import podcasts from '../../assets/icons/icon-podcasts-black.svg';
+import queue from '../../assets/icons/icon-queue-black.svg';
+import recommend from '../../assets/icons/icon-recommend-black.svg';
+import refresh from '../../assets/icons/icon-refresh-black.svg';
+import rotation3D from '../../assets/icons/icon-3d_rotation-black.svg';
+import save from '../../assets/icons/icon-save-black.svg';
+import showChart from '../../assets/icons/icon-show_chart-black.svg';
+import snowflake from '../../assets/icons/icon-ac_unit-black.svg';
+import tune from '../../assets/icons/icon-tune-black.svg';
+import unsubscribe from '../../assets/icons/icon-unsubscribe-black.svg';
+import volumeOff from '../../assets/icons/icon-volume_off-black.svg';
+import volumeUp from '../../assets/icons/icon-volume_up-black.svg';
 
 const icons = {
-  addTask,
-  brightness,
-  cloudUpload,
-  directions,
-  fingerprint,
-  pokeball,
-  snowflake
+  addAlert,
+  addCircle,
+  addLocation,
+  addReaction,
+  call,
+  callEnd,
+  checkBox,
+  crop,
+  indeterminiteCheckBox,
+  lightMode,
+  link,
+  navigate,
+  navigateBefore,
+  navigateNext,
+  podcasts,
+  queue,
+  recommend,
+  refresh,
+  save,
+  showChart,
+  tune,
+  unsubscribe,
+  volumeOff,
+  volumeUp,
+  snowflake,
+  rotation3D,
 };
 
 const Button = styled.button`
@@ -24,6 +63,7 @@ const Button = styled.button`
   ${shadow}
   ${space}
   border-radius: 6px;
+  line-height: 20px;
   padding:
     ${theme.space[2]}
     ${theme.space[4]}
@@ -49,7 +89,6 @@ const Button = styled.button`
     `}
     ${(props) =>
     !props.color && !props.variant && css`
-      ${console.log('FIRED NOT DEFAULT, PRIMARY, SECONDARY, OR DANGER')}
       background-color: ${theme.colors.gray[100]};
       border: 0;
       box-shadow: ${theme.shadow.default};
@@ -138,34 +177,47 @@ const Button = styled.button`
         cursor: not-allowed;
       }
     `}
-    ${(props) =>
-      props.startIcon &&
-      css`
-        display: flex;
-        ::before {
-          content: url(${icons[props.startIcon]});
-          height: 100%;
-          display: flex;
-          flex-direction: row;
-          height: 14px;
-          width: 14px;
-          margin-right: 8px;
+
+    ${(props) => props.startIcon && css`
+      display: flex;
+      ::before {
+        content: url(${icons[props.startIcon]});
+        height: 14px;
+        width: 14px;
+        margin-right: 12px;
+      }
+    `}
+    ${(props) => ((props.startIcon && !props.color) || (props.startIcon && props.color === 'default')) && css`
+      ::before {
+        filter: ${theme.filter.default};
+      }
+    `}
+    ${(props) => props.startIcon && props.color && props.color !== 'default' && css`
+      ::before {
+        filter: ${theme.filter.white};
+      }
+    `}
+
+    ${(props) => props.endIcon && css`
+      display: flex;
+        ::after {
+        content: url(${icons[props.endIcon]});
+        height: 14px;
+        width: 14px;
+        margin-left: 10px;
+      }
+    `}
+      ${(props) => ((props.endIcon && !props.color) || (props.endIcon && props.color === 'default')) && css`
+        ::after {
+          filter: ${theme.filter.default};
         }
       `}
-      ${(props) =>
-        props.endIcon &&
-        css`
-          display: flex;
-          ::after {
-            content: url(${icons[props.endIcon]});
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            height: 14px;
-            width: 14px;
-            margin-left: 8px;
-          }
-        `}
+      ${(props) => props.endIcon && props.color && props.color !== 'default' && css`
+        ::after {
+          filter: ${theme.filter.white};
+        }
+    `}
+
     ${(props) =>
       props.disableShadow === true &&
       css`
