@@ -197,6 +197,11 @@ const Button = styled.button`
         filter: ${theme.filter.white};
       }
     `}
+    ${(props) => ((props.startIcon && props.variant === 'outline') || (props.startIcon && props.variant === 'text')) && css`
+      ::before {
+        filter: ${theme.filter.outline};
+      }
+    `}
 
     ${(props) => props.endIcon && css`
       display: flex;
@@ -216,6 +221,11 @@ const Button = styled.button`
         ::after {
           filter: ${theme.filter.white};
         }
+    `}
+    ${(props) => ((props.endIcon && props.variant === 'outline') || (props.endIcon && props.variant === 'text'))  && css`
+      ::after {
+        filter: ${theme.filter.outline};
+      }
     `}
 
     ${(props) =>
