@@ -148,6 +148,7 @@ const Button = styled.button`
     css`
       background-color: ${theme.colors.coolGray[100]};
       border: none;
+      box-shadow: ${theme.shadow.secondary};
       color: ${theme.colors.white[100]};
       :hover:enabled,
       :focus:enabled {
@@ -205,6 +206,21 @@ const Button = styled.button`
         filter: ${theme.filter.outline};
       }
     `}
+    ${(props) => ((props.startIcon && props.color === 'default') && (props.variant === 'text' || props.variant === 'outline')) && css`
+      ::before {
+        filter: ${theme.filter.defaultOutlineOrText};
+      }
+    `}
+    ${(props) => ((props.startIcon && props.color === 'secondary') && (props.variant === 'text' || props.variant === 'outline')) && css`
+      ::before {
+        filter: ${theme.filter.secondary};
+      }
+    `}
+    ${(props) => ((props.startIcon && props.color === 'danger') && (props.variant === 'text' || props.variant === 'outline')) && css`
+      ::before {
+        filter: ${theme.filter.danger};
+      }
+    `}
 
     ${(props) => props.endIcon && css`
       display: flex;
@@ -228,6 +244,21 @@ const Button = styled.button`
     ${(props) => ((props.endIcon && props.variant === 'outline') || (props.endIcon && props.variant === 'text'))  && css`
       ::after {
         filter: ${theme.filter.outline};
+      }
+    `}
+    ${(props) => ((props.endIcon && props.color === 'default') && (props.variant === 'text' || props.variant === 'outline')) && css`
+      ::after {
+        filter: ${theme.filter.defaultOutlineOrText};
+      }
+    `}
+    ${(props) => ((props.endIcon && props.color === 'secondary') && (props.variant === 'text' || props.variant === 'outline')) && css`
+      ::after {
+        filter: ${theme.filter.secondary};
+      }
+    `}
+    ${(props) => ((props.endIcon && props.color === 'danger') && (props.variant === 'text' || props.variant === 'outline')) && css`
+      ::after {
+        filter: ${theme.filter.danger};
       }
     `}
       ${(props) => (props.variant === 'outline' && props.color === 'default' && css`

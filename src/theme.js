@@ -61,6 +61,7 @@ export default {
       border: "none",
       "&:disabled": {
         backgroundColor: colors.gray[100],
+        boxShadow: 'none',
         color: colors.gray[300]
       },
       "&:disabled:hover": {
@@ -119,6 +120,9 @@ export default {
   },
   filter: {
     default: 'invert(20%) sepia(0%) saturate(1397%) hue-rotate(232deg) brightness(107%) contrast(89%)',
+    defaultOutlineOrText: 'invert(97%) sepia(7%) saturate(40%) hue-rotate(350deg) brightness(108%) contrast(76%)',
+    secondary: 'invert(30%) sepia(29%) saturate(332%) hue-rotate(155deg) brightness(101%) contrast(93%)',
+    danger: 'invert(32%) sepia(53%) saturate(2154%) hue-rotate(335deg) brightness(82%) contrast(107%)',
     outline: 'invert(39%) sepia(61%) saturate(7035%) hue-rotate(227deg) brightness(101%) contrast(99%)',
     text: 'invert(39%) sepia(61%) saturate(7035%) hue-rotate(227deg) brightness(101%) contrast(99%)',
     white: 'invert(100%) sepia(1%) saturate(0%) hue-rotate(84deg) brightness(108%) contrast(100%)'
