@@ -227,7 +227,86 @@ const Button = styled.button`
         filter: ${theme.filter.outline};
       }
     `}
-
+      ${(props) => (props.variant === 'outline' && props.color === 'default' && css`
+        background: none;
+        box-shadow: none;
+        border: 1px solid ${theme.colors.gray[100]};
+        color: ${theme.colors.gray[300]};
+        :hover:enabled,
+        :focus:enabled {
+          background-color: ${theme.colors.gray[100] + '1A'};
+        }
+      `)}
+    ${(props) => props.variant === 'outline' && props.color === 'primary' && css`
+        background: none;
+        box-shadow: none;
+        border: 1px solid ${theme.colors.blue[300]};
+        color: ${theme.colors.blue[300]};
+        :hover:enabled,
+        :focus:enabled {
+          background-color: ${theme.colors.blue[300] + '1A'};
+        }
+      `}
+    ${(props) => props.variant === 'outline' && props.color === 'danger' && css`
+      background: none;
+      box-shadow: none;
+      border: 1px solid ${theme.colors.red[100]};
+      color: ${theme.colors.red[100]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.red[100] + '1A'}
+      }
+    `}
+    ${(props) => props.variant === 'outline' && props.color === 'secondary' && css`
+      background: none;
+      box-shadow: none;
+      border: 1px solid ${theme.colors.coolGray[100]};
+      color: ${theme.colors.coolGray[100]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.coolGray[100] + '1A'};
+      }
+    `}
+    ${(props) => props.variant === 'text' && props.color === 'default' && css`
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: ${theme.colors.gray[300]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.coolGray[100] + '1A'};
+      }
+    `}
+    ${(props) => props.variant === 'text' && props.color === 'primary' && css`
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: ${theme.colors.blue[300]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.blue[300] + '1A'};
+      }
+    `}
+    ${(props) => props.variant === 'text' && props.color === 'secondary' && css`
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: ${theme.colors.coolGray[100]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.coolGray[100] + '1A'};
+      }
+    `}
+    ${(props) => props.variant === 'text' && props.color === 'danger' && css`
+      background: none;
+      box-shadow: none;
+      border: none;
+      color: ${theme.colors.red[100]};
+      :hover:enabled,
+      :focus:enabled {
+        background-color: ${theme.colors.red[100] + '1A'};
+      }
+    `}
     ${(props) =>
       props.disableShadow === true &&
       css`
