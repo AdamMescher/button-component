@@ -32,7 +32,9 @@ Overall, this was a fantastic opportunity to learn [styled-system](https://style
 
 ## Features
 
-### Three unique button types: `default`, `outline`, and `text`
+### Three unique button variants: `default`, `outline`, and `text`
+
+<img width="1016" alt="variants" src="https://user-images.githubusercontent.com/6540117/108438500-9af73b80-720c-11eb-9a1f-d8ee19aa629f.png">
 
 #### default
 
@@ -51,31 +53,31 @@ Default color scheme and button type is used when `variant` or `color` props are
 
 #### outline
 
+<img width="1020" alt="outline" src="https://user-images.githubusercontent.com/6540117/108438612-db56b980-720c-11eb-84bd-b777e018ed3c.png">
+
+
 #### text
+
+<img width="1016" alt="text" src="https://user-images.githubusercontent.com/6540117/108438588-d134bb00-720c-11eb-8d63-e93a48b9c5be.png">
 
 ### Three unique button sizes: `sm`, `md`, and `lg`
 
-#### sm
+<img width="1023" alt="sizes" src="https://user-images.githubusercontent.com/6540117/108438636-e6a9e500-720c-11eb-86a5-b3a8ba877622.png">
 
-#### md
-
-#### lg
 
 ### Four unique colors schemes: `default`, `primary`, `secondary`, `danger`
 
-#### default
-
-#### primary
-
-#### secondary
-
-#### danger
+<img width="1027" alt="colors" src="https://user-images.githubusercontent.com/6540117/108438547-b95d3700-720c-11eb-9e04-957191eace0a.png">
 
 ### Icons before and after text with `startIcon` and `endIcon`
 
 #### startIcon
 
+<img width="1026" alt="start-icon" src="https://user-images.githubusercontent.com/6540117/108438445-83b84e00-720c-11eb-8a9a-fde8bb40a6f7.png">
+
 #### endIcon
+
+<img width="1028" alt="end-icon" src="https://user-images.githubusercontent.com/6540117/108438475-903ca680-720c-11eb-9a9b-dfdcfd67c134.png">
 
 #### Available Icons
 
